@@ -39,10 +39,10 @@ public class TankSubsystem extends SubsystemBase {
   }
 
   public void tankDrive(double leftDrive, double rightDrive) {
-    leftMotorA.set(TalonSRXControlMode.PercentOutput, leftDrive);
-    leftMotorB.set(TalonSRXControlMode.PercentOutput, leftDrive);
-    rightMotorA.set(TalonSRXControlMode.PercentOutput, -rightDrive);
-    rightMotorB.set(TalonSRXControlMode.PercentOutput, -rightDrive);
+    leftMotorA.set(TalonSRXControlMode.PercentOutput, -leftDrive);
+    leftMotorB.set(TalonSRXControlMode.PercentOutput, -leftDrive);
+    rightMotorA.set(TalonSRXControlMode.PercentOutput, rightDrive);
+    rightMotorB.set(TalonSRXControlMode.PercentOutput, rightDrive);
   }
   
   
